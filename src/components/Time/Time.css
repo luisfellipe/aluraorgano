@@ -1,0 +1,23 @@
+.time{
+  text-align: center;
+  padding: 10px;
+}
+.time .time-box{
+  margin: 0 5px;
+} 
+
+.time .nomeTimeTitulo{
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 8px;
+}
+
+.borda-inferior{
+  width: 4%;
+  border-bottom: 4px solid;
+  margin: 15px auto;
+}
+
+.time .membros{
+  margin-top: 32px;
+}
