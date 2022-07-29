@@ -11,7 +11,7 @@ const ListaSuspensa = function(props) {
         onChange={(event) => props.setInput(event.target.value)}
         value={props.value}
         required={props.required}
-      >
+      > <option></option>
         {props.itens.map((item) => {
           return <option key={item.id}>{item.nome}</option>;
         })}

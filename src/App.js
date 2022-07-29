@@ -5,12 +5,6 @@ import Form from "./components/Form";
 import Time from "./components/Time";
 function App() {
   const times = [
-    {
-      nome: "-",
-      corPrimaria: "#e06b69",
-      corSecundaria: "#fde7e8",
-      id: 0,
-    },
 
     { nome: "DevOps", corPrimaria: "#e06b69", corSecundaria: "#fde7e8", id: 1 },
     {
@@ -52,23 +46,10 @@ function App() {
     },
   ];
   const [employes, setEmployes] = useState([]);
-  /*const membros = [
-    {
-      nome: "Juliana Amoasei",
-      cargo: "Desenvolvedora de software e instrutora",
-      id: 0,
-      imagem: https://images.pexels.com/photos/2272853/pexels-photo-2272853.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
-      
-        "https://www.alura.com.br/assets/img/imersoes/instrutores/juliana_amoasei.1647533644.jpg",
-     
-        "https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2018/03/formacao_1600x1200-como-a-presenca-da-mulher-pode-ser-harmonia-no-mundo.jpg",
- 
-      imagem: "https://github.com/luisfellipe.png",
-*/
 
   const setEmploye = (employer) => {
-    console.log(employer);
-    setEmployes([...employes, employer]);
+    employes.push(employer);
+    setEmployes([...employes]);
   };
   return (
     <div className="App">

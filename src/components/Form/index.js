@@ -14,7 +14,7 @@ const Form = function(props) {
   const setInputs = (event) => {
     event.preventDefault();
     const membro = {
-      id: uuidv4(),
+      id: String(uuidv4()),
       cargo,
       nome,
       imagem,
