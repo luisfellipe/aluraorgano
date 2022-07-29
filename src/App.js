@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
+import OrganizacaoTile from "./components/OrganizacaoTitle";
 import Time from "./components/Time";
 function App() {
   const times = [
@@ -37,13 +38,7 @@ function App() {
       corPrimaria: "#ff8a29",
       corSecundaria: "#ffeedf",
       id: 7,
-    },
-    {
-      nome: "Desenvolvedora de software e instrutora",
-      corPrimaria: "#ff8a29",
-      corSecundaria: "#ffeedf",
-      id: 8,
-    },
+    }
   ];
   const [employes, setEmployes] = useState([]);
 
@@ -64,7 +59,7 @@ function App() {
         })}
         onEmployeRegistered={(employer) => setEmploye(employer)}
       />
-
+      <OrganizacaoTile title="Minha Organização:"/>
       {times.map((time) => {
         return (
           <Time

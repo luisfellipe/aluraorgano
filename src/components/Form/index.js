@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import Botao from "../Botao";
+import BotaoAddCard from "../BotaoAddCard";
 import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 import "./Form.css";
@@ -70,9 +70,9 @@ const Form = function(props) {
           itens={props.times}
         />
 
-        <Botao>
+        <BotaoAddCard>
           <p>Criar Card</p>
-        </Botao>
+        </BotaoAddCard>
       </form>
     </section>
   );

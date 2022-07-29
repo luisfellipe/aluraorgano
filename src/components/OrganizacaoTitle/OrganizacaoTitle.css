@@ -1,0 +1,26 @@
+.container{
+  display: "flex";
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #6278F7;
+  
+}
+
+.box-title{
+  margin: auto;
+  padding-top: 6px;
+  padding-bottom: 2px;
+}
+
+.title{
+  font-size: 32pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.borda-inferior-org{
+  width: 5%;
+  border-bottom: 5px solid #6278F7;
+  margin: 15px auto;
+}
